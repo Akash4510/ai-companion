@@ -9,7 +9,7 @@ async function main() {
     await client.connect();
 
     const database = client.db(); // No need to specify a database name in the connection URI
-    const categoriesCollection = database.collection('categories');
+    const categoriesCollection = database.collection('Category');
 
     const categoriesToInsert = [
       { name: 'Famous People' },

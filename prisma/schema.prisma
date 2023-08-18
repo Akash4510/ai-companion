@@ -10,7 +10,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model categories {
+model Category {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
   name      String
 }

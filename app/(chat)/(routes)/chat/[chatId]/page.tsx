@@ -26,6 +26,9 @@ const ChatIdPage = async ({ params }: ChatIdPageProps) => {
         orderBy: {
           createdAt: 'asc',
         },
+        where: {
+          userId,
+        },
       },
       _count: {
         select: {

@@ -32,6 +32,28 @@ model Companion {
   category      Category @relation(fields: [categoryId], references: [id])
   categoryId    String @db.ObjectId
 
+  messages      Message[]
+
   @@index([categoryId])
   @@index([name], name: "name_text_idx") // Text index for full-text search
+}
+
+enum Role {
+  user
+  system
+}
+
+model Message {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  role          Role
+  content       String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  companionId   String @db.ObjectId
+  userId        String @db.ObjectId
+
+  companion     Companion @relation(fields: [companionId], references: [id], onDelete: Cascade)
+
+  @@index([companionId])
 }

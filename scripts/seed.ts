@@ -9,22 +9,12 @@ async function main() {
     await client.connect();
 
     const database = client.db(); // No need to specify a database name in the connection URI
-    const categoriesCollection = database.collection('Category');
+    const companionCollection = database.collection('Companion');
 
-    const categoriesToInsert = [
-      { name: 'Famous People' },
-      { name: 'Movies & TV' },
-      { name: 'Musicians' },
-      { name: 'Games' },
-      { name: 'Animals' },
-      { name: 'Philosophy' },
-      { name: 'Scientists' },
-    ];
-
-    await categoriesCollection.insertMany(categoriesToInsert);
-    console.log('Default categories seeded successfully.');
+    await companionCollection.createIndex({ name: 'text' });
+    console.log('Index created');
   } catch (error) {
-    console.error('Error seeding default categories:', error);
+    console.error('Error creating index', error);
   } finally {
     await client.close();
   }

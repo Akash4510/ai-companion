@@ -10,11 +10,15 @@ interface CompanionIdPageProps {
 const CompanionIdPage = async ({ params }: CompanionIdPageProps) => {
   // TODO: Check subscription
 
-  const companion = await prismadb.companion.findUnique({
-    where: {
-      id: '64df13c79d310227821297c1',
-    },
-  });
+  let companion = null;
+
+  if (params.companionId !== 'new') {
+    companion = await prismadb.companion.findUnique({
+      where: {
+        id: params.companionId,
+      },
+    });
+  }
 
   const categories = await prismadb.category.findMany();
 

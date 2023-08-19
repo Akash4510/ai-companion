@@ -33,8 +33,11 @@ const Companinos = ({ data }: CompaninosProps) => {
           key={item.id}
           className="bg-primary/10 rounded-xl cursor-pointer hover:opacity-75 transition border-0"
         >
-          <Link href={`/chat/${item.id}`}>
-            <CardHeader className="flex items-center justify-center text-center text-muted-foreground">
+          <Link
+            className="flex flex-col justify-between h-full"
+            href={`/chat/${item.id}`}
+          >
+            <CardHeader className="flex items-center justify-center text-center gap-3">
               <div className="relative w-32 h-32">
                 <Image
                   src={item.src}
@@ -43,8 +46,12 @@ const Companinos = ({ data }: CompaninosProps) => {
                   alt="Companion"
                 />
               </div>
-              <p className="font-bold">{item.name}</p>
-              <p className="text-xs">{item.description}</p>
+              <div className="flex flex-col gap-1">
+                <p className="font-bold">{item.name}</p>
+                <p className="text-xs text-muted-foreground">
+                  {item.description}
+                </p>
+              </div>
             </CardHeader>
 
             <CardFooter className="flex items-center justify-between text-xs text-muted-foreground">

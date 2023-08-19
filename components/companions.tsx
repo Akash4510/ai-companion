@@ -31,7 +31,7 @@ const Companinos = ({ data }: CompaninosProps) => {
       {data.map((item) => (
         <Card
           key={item.id}
-          className="bg-primary/10 rounded-xl cursor-pointer hover:opacity-75 transition border-0"
+          className="bg-primary/10 rounded-xl cursor-pointer hover:opacity-75 transition border-0 min-w-[9rem]"
         >
           <Link
             className="flex flex-col justify-between h-full"
@@ -47,7 +47,9 @@ const Companinos = ({ data }: CompaninosProps) => {
                 />
               </div>
               <div className="flex flex-col gap-1">
-                <p className="font-bold">{item.name}</p>
+                <p className="font-bold text-gray-700 dark:text-gray-300">
+                  {item.name}
+                </p>
                 <p className="text-xs text-muted-foreground">
                   {item.description}
                 </p>

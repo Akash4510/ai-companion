@@ -2,7 +2,7 @@
 
 Welcome to **[companion.ai](https://ai-companion-nu.vercel.app/)** - Your Personal AI Companion Creator and Conversational Partner!
 
-![App Preview](https://github.com/Akash4510/ai-companion/assets/78362903/134ca844-6a18-46fa-8df1-61688db25b7d)
+![App Preview](https://github.com/Akash4510/ai-companion/assets/78362903/427b2425-dde1-45e6-a2b5-fceca9bfa09c)
 
 ## About the Project
 

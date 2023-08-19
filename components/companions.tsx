@@ -46,7 +46,7 @@ const Companinos = ({ data }: CompaninosProps) => {
                   alt="Companion"
                 />
               </div>
-              <div className="flex flex-col gap-1">
+              <div className="space-y-1">
                 <p className="font-bold text-gray-700 dark:text-gray-300">
                   {item.name}
                 </p>

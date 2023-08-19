@@ -61,7 +61,7 @@ const ChatHeader = ({ companion }: ChatHeaderProps) => {
           <ChevronLeft className="h-8 w-8" />
         </Button>
 
-        <BotAvatar src={companion.src} />
+        <BotAvatar src={companion.src} size={11} />
 
         <div className="flex flex-col gap-y-1">
           <div className="flex items-center gap-x-2">

@@ -1,6 +1,6 @@
 # companion.ai
 
-Welcome to **companion.ai** - Your Personal AI Companion Creator and Conversational Partner!
+Welcome to **[companion.ai](https://ai-companion-nu.vercel.app/)** - Your Personal AI Companion Creator and Conversational Partner!
 
 ![App Preview](https://github.com/Akash4510/ai-companion/assets/78362903/134ca844-6a18-46fa-8df1-61688db25b7d)
 

@@ -6,7 +6,7 @@ import { Search } from 'lucide-react';
 import qs from 'query-string';
 
 import { Input } from '@/components/ui/input';
-import { useDebounce } from '@/app/hooks/use-debounce';
+import { useDebounce } from '@/hooks/use-debounce';
 
 const SearchInput = () => {
   const router = useRouter();

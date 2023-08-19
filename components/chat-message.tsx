@@ -29,6 +29,7 @@ const ChatMessage = ({ role, content, isLoading, src }: ChatMessageProps) => {
     navigator.clipboard.writeText(content);
     toast({
       description: 'Message copied to clipboard',
+      duration: 3000,
     });
   };
 

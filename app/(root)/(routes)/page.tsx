@@ -1,6 +1,6 @@
+import prismadb from '@/lib/prismadb';
 import SearchInput from '@/components/search-input';
 import Categories from '@/components/categories';
-import prismadb from '@/lib/prismadb';
 import Companinos from '@/components/companions';
 
 interface RootPageProps {
@@ -29,6 +29,7 @@ const RootPage = async ({ searchParams }: RootPageProps) => {
       },
     },
   });
+
   const categories = await prismadb.category.findMany();
 
   return (

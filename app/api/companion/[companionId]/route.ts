@@ -1,6 +1,8 @@
-import prismadb from '@/lib/prismadb';
 import { currentUser } from '@clerk/nextjs';
 import { NextResponse } from 'next/server';
+
+import prismadb from '@/lib/prismadb';
+import { checkSubscription } from '@/lib/subscription';
 
 export async function PATCH(
   req: Request,
@@ -31,12 +33,16 @@ export async function PATCH(
       return new NextResponse('Missing required fields', { status: 400 });
     }
 
-    // TODO: Check for subscription
+    const isPro = await checkSubscription();
+
+    if (!isPro) {
+      return new NextResponse('Pro subscription required', { status: 403 });
+    }
 
     const companion = await prismadb.companion.update({
       where: {
-        userId: user.id,
         id: params.companionId,
+        userId: user.id,
       },
       data: {
         categoryId,
@@ -74,8 +80,8 @@ export async function DELETE(
 
     const companion = await prismadb.companion.delete({
       where: {
-        userId: user.id,
         id: params.companionId,
+        userId: user.id,
       },
     });
 

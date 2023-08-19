@@ -57,3 +57,14 @@ model Message {
 
   @@index([companionId])
 }
+
+model UserSubscription {
+  id                      String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId                  String   @unique
+  stripeCustomerId        String?  @unique
+  stripeSubscriptionId    String?  @unique
+  stripePriceId           String?  @unique
+  stripeCurrentPeriodEnd  DateTime? @unique
+  createdAt               DateTime @default(now())
+  updatedAt               DateTime @updatedAt
+}

@@ -101,6 +101,7 @@ const CompanionForm = ({ initialData, categories }: CompanionFormProps) => {
 
         toast({
           description: 'Companion edited successfully',
+          duration: 3000,
         });
       } else {
         // Create companion functionality
@@ -108,6 +109,7 @@ const CompanionForm = ({ initialData, categories }: CompanionFormProps) => {
 
         toast({
           description: 'Companion created successfully',
+          duration: 3000,
         });
       }
 
@@ -119,6 +121,7 @@ const CompanionForm = ({ initialData, categories }: CompanionFormProps) => {
       toast({
         variant: 'destructive',
         description: 'Something went wrong',
+        duration: 3000,
       });
     }
   };

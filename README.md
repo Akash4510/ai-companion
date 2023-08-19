@@ -2,7 +2,7 @@
 
 Welcome to **companion.ai** - Your Personal AI Companion Creator and Conversational Partner!
 
-![App Preview](assets/main-preview.png)
+![App Preview](https://github.com/Akash4510/ai-companion/assets/78362903/134ca844-6a18-46fa-8df1-61688db25b7d)
 
 ## About the Project
 
@@ -12,9 +12,8 @@ Welcome to **companion.ai** - Your Personal AI Companion Creator and Conversatio
 
 Empower Your AI Companion to Adapt to Your Unique Needs:
 
-<p align="center">
-  <img src="assets/add-companion-configuration.png" alt="Versatility in Applications">
-</p>
+![Versatality in Applications](https://github.com/Akash4510/ai-companion/assets/78362903/bf110cf4-8e8c-421a-bb57-8cb08ea3d90c)
+
 
 Unleash the Full Spectrum of Possibilities:
 
@@ -44,9 +43,9 @@ Unleash the Full Spectrum of Possibilities:
 
 Transform Your AI Companion into an Extension of Yourself:
 
-<div style="display: flex; justify-content: space-between;">
-  <img src="assets/add-companion-general.png" alt="general" style="width: 48%;">
-  <img src="assets/add-companion-configuration.png" alt="configuration" style="width: 48%;">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <img src="https://github.com/Akash4510/ai-companion/assets/78362903/928b4de6-e506-494d-aee8-4c9fdc9fe831" alt="general" style="width: 48%;">
+  <img src="https://github.com/Akash4510/ai-companion/assets/78362903/bf110cf4-8e8c-421a-bb57-8cb08ea3d90c" alt="configuration" style="width: 48%;">
 </div>
 
 ### Crafting Your AI Companion's Purpose
@@ -68,7 +67,7 @@ Transform Your AI Companion into an Extension of Yourself:
 Engage in Effortless Conversations with Your AI Companion:
 Example Conversations
 
-![Example Conversations](assets/example-conversation.png)
+![example-conversation](https://github.com/Akash4510/ai-companion/assets/78362903/164fd5bf-11b1-4bcf-9a85-a437ce3e6080)
 
 #### Conversational Mastery
 

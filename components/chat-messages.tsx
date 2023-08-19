@@ -35,7 +35,7 @@ const ChatMessages = ({
   }, [messages.length]);
 
   return (
-    <div className="flex-1 overflow-y-auto pr-4">
+    <div className="flex-1 overflow-y-auto pr-4 no-scrollbar">
       <ChatMessage
         isLoading={fakeLoading}
         src={companion.src}
